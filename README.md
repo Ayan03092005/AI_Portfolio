@@ -64,27 +64,20 @@ Verify the Gemini API key is valid and has quota.
 Check the console (F12 > Console) for errors like "Invalid API key" or "Quota exceeded".
 Test the API endpoint: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent.
 
-
 Images Not Loading:
 Ensure Pexels URLs are accessible (e.g., https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg).
 Check the Network tab in dev tools for 404 errors.
 Replace with alternative Pexels images if needed.
-
 
 Firebase Deployment Issues:
 Confirm index.html is in the public directory specified in firebase.json.
 Check CLI output for errors (firebase deploy --debug).
 Ensure you have “Firebase Hosting Admin” permissions in the Firebase Console.
 
-
 Distorted Chatbot Window:
 Verify the chat-overlay CSS (flex items-center justify-center, z-index: 50).
 Test on multiple screen sizes and clear browser cache.
 
-
-
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
 Contact
 Feel free to reach out via GitHub or open an issue in this repository for questions or feedback.
 
