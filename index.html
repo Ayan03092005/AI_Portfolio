@@ -11,6 +11,7 @@
             darkMode: 'class'
         };
     </script>
+
     <style>
         /* Custom animation for chat bubble */
         @keyframes pulse {
@@ -45,6 +46,7 @@
         }
     </style>
 </head>
+
 <body class="bg-gray-100 font-sans text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300">
     <!-- Navbar -->
     <nav class="fixed top-0 w-full bg-white dark:bg-gray-800 shadow-md z-10">
@@ -95,20 +97,41 @@
     <!-- Projects Section -->
     <section id="projects" class="py-16 bg-gray-100 dark:bg-gray-900">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">My Projects</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Some Projects...</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
-                    <img src="https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg" alt="E-Commerce Platform Interface" class="w-full h-48 object-cover">
+                    <img src="https://i.ibb.co/8nQSMtkD/images.png" alt="Movie rating" class="w-full h-48 object-cover">
                     <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">E-Commerce Platform</h3>
-                        <p class="text-gray-600 dark:text-gray-400">A fully responsive online store built with React and Node.js.</p>
+                        <h3 class="text-xl font-semibold mb-2">Movie Review Prediction</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Predict movie review sentiment using the IMDB dataset.</p>
                     </div>
                 </div>
                 <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
-                    <img src="https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg" alt="Task Manager Application" class="w-full h-48 object-cover">
+                    <img src="https://i.ibb.co/cStLYLYx/thumbnail-5.png" alt="Amazon Clone" class="w-full h-48 object-cover">
                     <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">Task Manager</h3>
-                        <p class="text-gray-600 dark:text-gray-400">A productivity app with real-time collaboration features.</p>
+                        <h3 class="text-xl font-semibold mb-2">Amazon Clone</h3>
+                        <p class="text-gray-600 dark:text-gray-400">A clone website of Amazon.</p>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://i.ibb.co/gqdJ0k8/images.jpg" alt="Farming pic" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Krishi Setu</h3>
+                        <p class="text-gray-600 dark:text-gray-400">AI solution for yield prediction, disease detection, and multilingual, voice-enabled crop advisory.</p>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://i.ibb.co/cXKkDpPc/download.jpg" alt="Hangman game" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Hangman game</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Hangman game using Python</p>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://i.ibb.co/zTj36FMd/2019-10-21-add-images-on-gallery-section.jpg" alt="Gallery pic" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Gallery Website</h3>
+                        <p class="text-gray-600 dark:text-gray-400">An aethetic website showing beautiful photos...</p>
                     </div>
                 </div>
                 <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
@@ -167,7 +190,7 @@
                 <div class="chat-message ai-message flex items-start mb-4">
                     <img src="https://i.ibb.co/VpvQDzpN/Whats-App-Image-2025-03-29-at-17-39-12-a895b810.jpg" alt="Profile" class="w-8 h-8 rounded-full object-cover mr-2">
                     <div class="bg-gray-100 dark:bg-gray-700 p-2 rounded-lg">
-                        <p>Hi, I am Ayan Chattopadhyay, what do you want to know about me?</p>
+                        <p>Hi, I am Ayan! Sup?</p>
                     </div>
                 </div>
             </div>
@@ -185,10 +208,32 @@
         </div>
     </div>
 
-    <script>
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  //hositng on https://aiportfolio-5014d.web.app/
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.7.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.7.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyD4vsYRJvgxDOMN1TeZs4OuU9kh00RQEyE",
+    authDomain: "aiportfolio-5014d.firebaseapp.com",
+    projectId: "aiportfolio-5014d",
+    storageBucket: "aiportfolio-5014d.firebasestorage.app",
+    messagingSenderId: "984224542682",
+    appId: "1:984224542682:web:9db044f7e679147b431ae3",
+    measurementId: "G-07YZW8QD8C"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
         // Variables
         const my_fullname = "Ayan Chattopadhyay";
-        const myDescription = "I am a 3rd year BTech Computer Science and Engineering student at the Institute of Engineering and Management (IEM) graduating in 2027. I have a deep passion for technology, particularly in the areas of Artificial Intelligence, Machine Learning, and Web Development. Over the past few semesters, I have worked on a range of interdisciplinary and impactful projects. One of my major projects is HealMap, an AI-powered healthcare app that uses an interactive 3D mannequin to help users input symptoms and get diagnostic predictions. It's not completed yet. I have also worked on Event Identification in Text using SpaCy where I explored primitive and static word embeddings like Word2Vec, GloVe, and TF-IDF for NLP-based classification tasks. Other projects include classifying movie reviews using machine learning, a number guessing game using Python, a Hangman game, an Amazon clone website, and a gallery website. In the environmental domain, I contributed to a project involving Satellite NDMI and Deep Percolation Analysis using satellite data to assess water levels near plant roots. Another technical project I am working on is Wavelet-based BERT Embedding Analysis, where I applied Discrete Wavelet Transforms (DWT) to compress and analyze BERT embeddings. I have actively participated in academic events like Pragyan’25 and the IEMTECH conference, where I presented my research on Generative AI. These experiences have helped me polish my research presentation and technical communication skills. I secured the 3rd prize in the CodeBreakOdyssey Hackathon and was the 2nd finalist in the internal Smart India Hackathon (SIH). My paper on Generative AI is currently published in IEEE. When preparing for exams, I go all out by creating theory notes, flashcards, and model answers to master every concept. Apart from tech, I am a big fan of Indo-Chinese cuisine. Dishes like spicy hakka noodles and crispy chilli potatoes are my absolute favorites. In my free time, I enjoy playing games, drawing, singing, watching Netflix, and cooking.";
+        const myDescription = "you are a 3rd year BTech Computer Science and Engineering student at the Institute of Engineering and Management (IEM) graduating in 2027. you have a deep passion for technology, particularly in the areas of Artificial Intelligence, Machine Learning, and Web Development. Over the past few semesters, u have worked on a range of interdisciplinary and impactful projects. One of your projects is HealMap, an AI-powered healthcare app that uses an interactive 3D mannequin to help users input symptoms and get diagnostic predictions. It's not completed yet. u have also worked on Event Identification in Text using SpaCy where u explored primitive and static word embeddings like Word2Vec, GloVe, and TF-IDF for NLP-based classification tasks. Other projects include classifying movie reviews using machine learning, a number guessing game using Python, a Hangman game, an Amazon clone website, and a gallery website. In the environmental domain, u contributed to a project involving Satellite NDMI and Deep Percolation Analysis using satellite data to assess water levels near plant roots. Another technical project u are working on is Wavelet-based BERT Embedding Analysis, where u applied Discrete Wavelet Transforms (DWT) to compress and analyze BERT embeddings. u have actively participated in academic events like Pragyan’25 and the IEMTECH conference, where u presented my research on Generative AI. These experiences have helped u polish ur research presentation and technical communication skills. you secured the 3rd prize in the CodeBreakOdyssey Hackathon and was the 2nd finalist in the internal Smart India Hackathon (SIH). ur paper on Generative AI is currently published in IEEE. When preparing for exams, u go all out by creating theory notes, flashcards, and model answers to master every concept. Apart from tech, u am a big fan of Indo-Chinese cuisine. Dishes like spicy hakka noodles and crispy chilli potatoes are your absolute favorites. your hobbies are playing games, drawing, singing, watching Netflix, and cooking.";
         const GEMINI_API_KEY = "AIzaSyCgXLpKNgUtVjuVkJlLGw0fMvBUfaeNG0U";
 
         // Initialize theme on page load
@@ -298,7 +343,7 @@
                     body: JSON.stringify({
                         contents: [{
                             parts: [{
-                                text: `User_message:${message}. Reply naturally to the usermessage if you can of basic messages like hi, hello, etc. and if required then answer based on: ${myDescription} . reply in a way that you're Ayan Chattopadhyay and is himself talking .reply in short sentences and to the point.`
+                                text: `User_message:${message}. Reply in a fun casual way to the usermessage and answer only what is asked and if required then answer based on: ${myDescription}. reply in short sentences and to the point.`
                             }]
                         }]
                     })
